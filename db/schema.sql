@@ -1,13 +1,14 @@
--- Create database
-CREATE DATABASE IF NOT EXISTS burgers_db;
+DROP DATABASE IF EXISTS burgers_db;
 
---Use dataase
+CREATE DATABASE burgers_db;
+
+-- Use database
 USE burgers_db;
 
 -- Create table
 CREATE TABLE burgers (
     id INT NOT NULL AUTO_INCREMENT,
-    burger_name VARCHAR(250) NOT NULL,
+    name VARCHAR(80),
     devoured BOOLEAN DEFAULT FALSE,
     PRIMARY KEY (id)
 );

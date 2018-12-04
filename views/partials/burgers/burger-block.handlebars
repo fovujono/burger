@@ -1,0 +1,10 @@
+<h3>
+    {{this.id}}. {{this.name}}
+
+ {{#unless devoured}}
+    <button class="devour-button" data-id="{{this.id}}" data-eat="{{devoured}}">
+    Time to EAT!
+    </button>
+ {{/unless}}
+
+</h3>
