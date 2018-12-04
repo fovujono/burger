@@ -1,7 +1,8 @@
-<h1>Devour the Burger?</h1>
+
+<div class="container">
+    <h1>Devour the Burger?</h1>
 
 <h2>Devour or Add Yummy Burgers!</h2>
-
 <ul>
     {{#each burgers}}
     {{#unless this.devoured}}
@@ -11,11 +12,10 @@
 </ul>
 
 <h2>Burgers you Devoured</h2>
-
 <ul>
     {{#each burgers}}
     {{#if this.devoured}}
-    <p>{{this.id}}. {{this.name}}</p>
+    <h3>{{this.id}}. {{this.name}}</h3>
     {{/if}}
     {{/each}}
 </ul>
@@ -30,4 +30,5 @@
 
  <button type="submit" id="submit">Submit</button>
 </form>
+</div>
 </div>
